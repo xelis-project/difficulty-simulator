@@ -10,7 +10,7 @@ First, you need to have dependencies installed:
 Then, you can generate data to visualize it.
 `poetry run generate.py`
 
-Now that you have a CSV file created (named `attemps.csv`) you can run the following command:
+Now that you have a CSV file created (named `attempts.csv`) you can run the following command:
 `poetry run graph.py`
 
 ## Credits
