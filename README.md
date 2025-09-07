@@ -1,11 +1,20 @@
-# XELIS Difficulty Simulator
+# XELIS Simulator
 
-This small program has two distincts parts, one is to generate random data (`generate.py`) and the other is to visualize it using Matplotlib (`graph.py`).
+This repository contains various program for simulating part of XELIS chain.
 
-## Usage
+Before using any scripts available, make sure to have Python and Poetry installed.
+Then, you need to have the dependencies installed: `poetry install`
 
-First, you need to have dependencies installed:
-`poetry install`
+## Difficulty
+
+In the `difficulty` folder, there is two distincts program parts:
+- one is to generate random data (`generate.py`)
+- the other is to visualize it using Matplotlib (`graph.py`).
+
+This program allows to visualize the reaction of the Kalman Filter used as a difficulty adjustment algorithm
+by estimating the unknown network hashrate.
+
+### Usage
 
 Then, you can generate data to visualize it.
 `poetry run generate.py`
@@ -13,6 +22,8 @@ Then, you can generate data to visualize it.
 Now that you have a CSV file created (named `attempts.csv`) you can run the following command:
 `poetry run graph.py`
 
-## Credits
+## Dynamic Fee
 
-All credits goes to [@deroholic](https://github.com/deroholic) for this work.
+In the `dynamic_fee` folder, we have two distinct parts again:
+- `base_fee.py` which allows to visualize how the dynamic base fee (fee per kB) will react against the block usage %.
+- `block_size_ema.py` to visualize the reaction from spikes of big blocks against the EMA.
