@@ -27,3 +27,7 @@ Now that you have a CSV file created (named `attempts.csv`) you can run the foll
 In the `dynamic_fee` folder, we have two distinct parts again:
 - `base_fee.py` which allows to visualize how the dynamic base fee (fee per kB) will react against the block usage %.
 - `block_size_ema.py` to visualize the reaction from spikes of big blocks against the EMA.
+
+![Dynamic base fee](images/base_fee_exp2.png)
+
+![Block size EMA](images/block_size_ema.png)
