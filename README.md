@@ -31,3 +31,11 @@ In the `dynamic_fee` folder, we have two distinct parts again:
 ![Dynamic base fee](images/base_fee_exp2.png)
 
 ![Block size EMA](images/block_size_ema.png)
+
+## Circulating Supply
+
+Estimation of the circulating supply of XELIS over time can be found in the `circulating_supply` folder.
+
+See `graph.py` for the code to generate the graph.
+
+![Circulating Supply](images/circulating_supply.png)
